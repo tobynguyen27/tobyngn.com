@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineOgImage('Default.takumi')
+</script>
 
 <template>
-  <div class="">
-    <p>Coming soon</p>
-  </div>
+  <main class="space-y-24">
+    <About />
+    <Contacts />
+    <Experience />
+    <Projects />
+    <Writing />
+  </main>
 </template>

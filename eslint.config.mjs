@@ -22,6 +22,5 @@ export default withNuxt(
     yaml: true,
     toml: true,
     jsonc: true,
-    unocss: true,
   }),
 )
