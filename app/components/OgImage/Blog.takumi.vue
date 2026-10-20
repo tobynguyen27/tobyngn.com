@@ -15,16 +15,16 @@ defineProps<{
         </svg>
       </div>
       <div class="flex flex-col">
-        <p class="text-5xl font-serif">
+        <p class="text-5xl" style="font-family: 'IBM Plex Serif'">
           Toby Nguyen
         </p>
-        <p class="font-serif text-3xl text-tx-2">
+        <p class="text-3xl text-tx-2" style="font-family: 'IBM Plex Serif'">
           Software Engineer
         </p>
       </div>
     </div>
     <div class="flex flex-col gap-5">
-      <p class="text-7xl font-serif">
+      <p class="text-7xl" style="font-family: 'IBM Plex Serif'">
         {{ title }}
       </p>
       <p class="text-4xl text-tx-2">

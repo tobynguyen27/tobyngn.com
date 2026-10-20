@@ -1,11 +1,7 @@
 ---
 title: SSR and CSR
-date: 2026-10-20
-
-ogImage:
-  props:
-    title: SSR and CSR
-    description: Everything about Server-side rendering and Client-side rendering
+description: Everything about Server-side rendering and Client-side rendering
+date: 2026-10-20   
 ---
 
 # {{ $doc.title }}

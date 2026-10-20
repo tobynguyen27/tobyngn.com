@@ -14,9 +14,10 @@ if (!post.value) {
   })
 }
 
-if (post.value.ogImage?.props) {
-  defineOgImage('Blog.takumi', post.value.ogImage.props)
-}
+defineOgImage('Blog.takumi', {
+  title: post.value.title,
+  description: post.value.description,
+})
 
 useSeoMeta({
   title: post.value.title,
