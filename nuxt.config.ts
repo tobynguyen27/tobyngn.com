@@ -89,4 +89,10 @@ export default defineNuxtConfig({
   sitemap: {
     zeroRuntime: true,
   },
+  aiReady: {
+    enabled: false,
+  },
+  skewProtection: {
+    enabled: false,
+  },
 })
