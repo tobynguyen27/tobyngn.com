@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { format } from 'date-fns'
-
 const slug = useRoute().params.slug
 
 const { data: post } = await useAsyncData(`blog-${slug}`, () => {
@@ -22,6 +20,18 @@ defineOgImage('Blog.takumi', {
 useSeoMeta({
   title: post.value.title,
 })
+
+const publicationDate = computed(() => {
+  if (!post.value?.date)
+    return ''
+
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  }).format(new Date(post.value.date))
+})
 </script>
 
 <template>
@@ -37,9 +47,9 @@ useSeoMeta({
           </NuxtLink>
         </div>
         <div class="">
-          <p class="text-sm text-tx-2">
-            {{ format(post.date, 'MMMM d, yyyy') }}
-          </p>
+          <time :datetime="post.date" class="text-sm text-tx-2">
+            {{ publicationDate }}
+          </time>
         </div>
       </header>
       <ContentRenderer

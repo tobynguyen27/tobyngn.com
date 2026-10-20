@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { format } from 'date-fns'
-
 const posts = await queryCollection('blog').order('date', 'DESC').all()
+
+const monthYear = new Intl.DateTimeFormat('en-US', {
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'UTC',
+})
 </script>
 
 <template>
@@ -13,9 +17,9 @@ const posts = await queryCollection('blog').order('date', 'DESC').all()
             <p class="underline group-hover:(decoration-bl text-bl)">
               {{ item.title }}
             </p>
-            <p v-once class="text-sm text-tx-2">
-              {{ format(item.date, 'MMM yyyy') }}
-            </p>
+            <time v-once class="text-sm text-tx-2">
+              {{ monthYear.format(new Date(item.date)) }}
+            </time>
           </div>
         </NuxtLink>
       </li>
