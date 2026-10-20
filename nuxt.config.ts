@@ -44,9 +44,23 @@ export default defineNuxtConfig({
   },
   fonts: {
     provider: 'bunny',
-    defaults: {
-      weights: ['300 400'],
-    },
+    families: [
+      {
+        name: 'Geist',
+        weights: [400],
+        global: true,
+      },
+      {
+        name: 'Geist Mono',
+        weights: [400],
+        global: true,
+      },
+      {
+        name: 'IBM Plex Serif',
+        weights: [300, 400],
+        global: true,
+      },
+    ],
   },
   image: {
     format: ['avif', 'webp'],
