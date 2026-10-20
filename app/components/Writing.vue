@@ -10,7 +10,7 @@ const posts = await queryCollection('blog').order('date', 'DESC').all()
       <li v-for="item in posts" :key="item.id" class="group cursor-pointer">
         <NuxtLink :to="item.path">
           <div class="flex items-baseline justify-between">
-            <p class="group-hover:(underline decoration-bl)">
+            <p class="underline group-hover:(decoration-bl text-bl)">
               {{ item.title }}
             </p>
             <p v-once class="text-sm text-tx-2">

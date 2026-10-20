@@ -18,7 +18,7 @@ const items: {
       <li v-for="item in items" :key="item.name" class="group">
         <NuxtLink :to="item.url" external target="_blank">
           <div class="flex items-baseline justify-between">
-            <p class="group-hover:(underline decoration-bl)">
+            <p class="group-hover:(text-bl decoration-bl) underline">
               {{ item.name }}
             </p>
             <p class="text-sm text-tx-2">
