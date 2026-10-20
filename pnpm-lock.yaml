@@ -41,9 +41,6 @@ importers:
       '@vercel/speed-insights':
         specifier: 2.0.0
         version: 2.0.0(9481eee4c72094587620852a8c0ffe35)
-      '@vueuse/nuxt':
-        specifier: 15.0.0
-        version: 15.0.0(fe965f008f606c9b9d7cb7a14ecc6d68)
       better-sqlite3:
         specifier: ^13.0.3
         version: 13.0.3
