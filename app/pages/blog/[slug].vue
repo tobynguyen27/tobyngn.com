@@ -15,10 +15,11 @@ if (!post.value) {
 defineOgImage('Blog.takumi', {
   title: post.value.title,
   description: post.value.description,
-})
+}, [{ key: 'og', width: 1200, height: 630 }])
 
 useSeoMeta({
   title: post.value.title,
+  description: post.value.description,
 })
 
 const publicationDate = computed(() => {

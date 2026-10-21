@@ -1,5 +1,8 @@
 <script setup lang="ts">
-defineOgImage('Default.takumi')
+defineOgImage('Default.takumi', [
+  { key: 'og', width: 1200, height: 630 },
+  { key: 'whatsapp', width: 800, height: 800 },
+])
 </script>
 
 <template>
