@@ -1,10 +1,9 @@
 ---
-title: SSR and CSR
 description: Everything about Server-side rendering and Client-side rendering
 date: 2026-10-20   
 ---
 
-# {{ $doc.title }}
+# SSR and CSR
 
 Years ago, I built my very first website using vanilla PHP. Back then, my whole philosophy on web development boiled down to three simple steps: connect to the database, run a query, and render the results on the page. Terminology like SSR (Server-Side Rendering) or CSR (Client-Side Rendering) wasn't even on my radar.
 
