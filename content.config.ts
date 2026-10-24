@@ -9,5 +9,14 @@ export default defineContentConfig({
         date: z.coerce.date(),
       }),
     }),
+    projects: defineCollection({
+      type: 'data',
+      source: 'projects/*.json',
+      schema: z.object({
+        name: z.string(),
+        description: z.string(),
+        url: z.string().url(),
+      }),
+    }),
   },
 })

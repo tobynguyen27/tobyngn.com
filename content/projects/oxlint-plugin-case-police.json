@@ -1,0 +1,5 @@
+{
+  "name": "Oxlint Case Police",
+  "description": "An Oxlint plugin that fixes the cases of known names",
+  "url": "https://github.com/tobynguyen-works/oxlint-plugin-case-police"
+}

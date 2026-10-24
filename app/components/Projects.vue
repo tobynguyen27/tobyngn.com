@@ -1,28 +1,20 @@
 <script setup lang="ts">
-const items: {
-  name: string
-  description: string
-  url: string
-}[] = [
-  {
-    name: 'Solitar',
-    description: 'An URL shortener',
-    url: 'https://solitar.link',
-  },
-]
+const { data: projects } = await useAsyncData('projects', () => {
+  return queryCollection('projects').all()
+})
 </script>
 
 <template>
   <Section name="Projects.">
     <ul class="space-y-5">
-      <li v-for="item in items" :key="item.name" class="group">
-        <NuxtLink :to="item.url" external target="_blank">
+      <li v-for="project in projects" :key="project.id" class="group">
+        <NuxtLink :to="project.url" external target="_blank">
           <div class="flex items-baseline justify-between">
             <p class="group-hover:(text-bl decoration-bl) underline">
-              {{ item.name }}
+              {{ project.name }}
             </p>
             <p class="text-sm text-tx-2">
-              {{ item.description }}
+              {{ project.description }}
             </p>
           </div>
         </NuxtLink>
