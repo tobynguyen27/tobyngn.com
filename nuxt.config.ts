@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   content: {
     database: {
       type: 'postgresql',
-      url: env.DATABASE_URL!,
+      url: env.DATABASE_URL_POOLED!,
     },
   },
   // SEO
