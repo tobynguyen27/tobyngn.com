@@ -55,7 +55,7 @@ const publicationDate = computed(() => {
       </header>
       <ContentRenderer
         :value="post"
-        class="mt-6 prose dark:prose-invert prose-headings:(font-serif) prose-h1:text-2xl"
+        class="mt-6 prose dark:prose-invert prose-headings:(font-serif) prose-h1:text-2xl marker:text-tx"
       />
     </article>
   </main>
