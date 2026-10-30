@@ -11,6 +11,7 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
+    "@libsql/client": "^0.18.0",
     "@nuxt/a11y": "1.0.0-alpha.1",
     "@nuxt/content": "3.16.2",
     "@nuxt/eslint": "1.17.0",

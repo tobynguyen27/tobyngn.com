@@ -1,3 +1,5 @@
+import { env } from 'node:process'
+
 export default defineNuxtConfig({
   // App
   css: ['~/assets/css/global.css'],
@@ -76,6 +78,13 @@ export default defineNuxtConfig({
       vercelAnalytics: {
         trigger: 'onNuxtReady',
       },
+    },
+  },
+  content: {
+    database: {
+      type: 'libsql',
+      url: env.TURSO_DATABASE_URL!,
+      authToken: env.TURSO_AUTH_TOKEN!,
     },
   },
   // SEO
