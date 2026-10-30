@@ -23,18 +23,6 @@ useSeoMeta({
   title: post.title,
   description: post.description,
 })
-
-const publicationDate = computed(() => {
-  if (!post.date)
-    return ''
-
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    timeZone: 'UTC',
-  }).format(new Date(post.date))
-})
 </script>
 
 <template>
@@ -50,9 +38,13 @@ const publicationDate = computed(() => {
           </NuxtLink>
         </div>
         <div class="">
-          <time :datetime="post.date" class="text-sm text-tx-2">
-            {{ publicationDate }}
-          </time>
+          <NuxtTime
+            :datetime="post.date"
+            class="text-sm text-tx-2"
+            year="numeric"
+            month="long"
+            day="numeric"
+          />
         </div>
       </header>
       <ContentRenderer
