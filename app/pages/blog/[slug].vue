@@ -49,7 +49,7 @@ useSeoMeta({
       </header>
       <ContentRenderer
         :value="post"
-        class="mt-6 prose dark:prose-invert prose-headings:(font-serif) prose-h1:text-2xl marker:text-tx"
+        class="mt-6 prose dark:prose-invert prose-headings:(font-serif) prose-h1:text-2xl marker:text-tx prose-code:before:content-none prose-code:after:content-none prose-code:(bg-bg-2 px-1 py-0.5 rounded-sm)"
       />
     </article>
   </main>
