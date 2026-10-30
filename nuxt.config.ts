@@ -21,6 +21,11 @@ export default defineNuxtConfig({
   builder: 'vite',
   nitro: {
     preset: 'vercel',
+    vercel: {
+      functions: {
+        runtime: 'bun1.x',
+      },
+    },
   },
 
   // Modules
