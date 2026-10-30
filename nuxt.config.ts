@@ -80,7 +80,7 @@ export default defineNuxtConfig({
   },
   // SEO
   site: {
-    url: 'https://tobynguyen.net',
+    url: 'https://tobyngn.com',
     name: 'Toby Nguyen',
     description: 'Toby Nguyen\'s personal website',
     defaultLocale: 'en',
