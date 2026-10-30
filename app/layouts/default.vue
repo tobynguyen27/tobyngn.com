@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Footer from '~/components/Footer.vue'
-
 const colorMode = useColorMode()
 
 function toggleColorMode() {
@@ -15,10 +13,21 @@ function toggleColorMode() {
 
 <template>
   <div class="bg-bg text-tx">
-    <header class="fixed top-6 right-6">
+    <header class="fixed top-6 right-6 z-10">
       <div class="flex gap-5">
-        <button aria-label="Toggle theme" @click="toggleColorMode">
-          <ClientOnly><div :class="[colorMode.value === 'light' ? 'i-ph:sun' : 'i-ph:moon']" /></ClientOnly>
+        <button
+          aria-label="Toggle theme"
+          :aria-pressed="colorMode.value === 'dark'"
+          type="button"
+          @click="toggleColorMode"
+        >
+          <ClientOnly>
+            <div :class="[colorMode.value === 'light' ? 'i-ph:sun' : 'i-ph:moon']" />
+
+            <template #fallback>
+              <div class="i-ph:sun" />
+            </template>
+          </ClientOnly>
         </button>
       </div>
     </header>

@@ -1,5 +1,5 @@
 ---
-description: A explanation why you should use Nuxt
+description: An explanation why you should use Nuxt
 date: 2026-10-30
 ---
 

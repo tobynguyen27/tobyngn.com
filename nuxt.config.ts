@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         class: 'bg-bg',
       },
       meta: [
-        { name: 'theme-color', content: '#FEFCF0' },
+        { name: 'theme-color', content: '#FFFCF0' },
         { name: 'theme-color', content: '#100F0F', media: '(prefers-color-scheme: dark)' },
       ],
     },

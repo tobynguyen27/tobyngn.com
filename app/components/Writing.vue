@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const posts = await queryCollection('blog').order('date', 'DESC').all()
+const { data: posts } = await useAsyncData('writing-posts', () => {
+  return queryCollection('blog').select('id', 'path', 'title', 'date').order('date', 'DESC').all()
+})
 </script>
 
 <template>

@@ -22,6 +22,8 @@ defineOgImage('Blog.takumi', {
 useSeoMeta({
   title: post.title,
   description: post.description,
+  ogType: 'article',
+  articlePublishedTime: new Date(post.date).toISOString(),
 })
 </script>
 

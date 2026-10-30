@@ -3,8 +3,14 @@
 <template>
   <div class="flex flex-col gap-5">
     <div class="flex items-center gap-3">
-      <div class="">
-        <NuxtImg src="avatar.svg" class="size-14 rounded-sm object-cover shrink-0" alt="Toby Nguyen" />
+      <div>
+        <NuxtImg
+          src="avatar.svg"
+          class="size-14 rounded-sm object-cover shrink-0"
+          width="56"
+          height="56"
+          alt="Toby Nguyen"
+        />
       </div>
       <div class="font-serif flex flex-col">
         <h1 class="text-xl">

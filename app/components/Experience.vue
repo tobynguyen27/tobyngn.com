@@ -17,7 +17,7 @@ const items: {
 <template>
   <Section name="Experience.">
     <ul class="space-y-5">
-      <li v-for="(item, index) in items" :key="index" class="flex items-baseline justify-between">
+      <li v-for="item in items" :key="item.title" class="flex items-baseline justify-between">
         <div class="flex gap-2 items-baseline">
           <span class="">{{ item.title }}</span>
           <span class="text-sm text-tx-2">{{ item.description }}</span>
