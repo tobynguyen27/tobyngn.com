@@ -8,6 +8,7 @@ date: 2026-10-30
 Three days ago was Nuxt's 10th anniversary. I truly can't believe 10 years have already passed with Nuxt. Although I first set foot in web development in 2021, I've used most of the well-known frameworks such as Next.js, TanStack Start, Qwik, Solid Start, etc., and most of them do a great job as web frameworks, but I still felt something was missing. When I came to Nuxt, I realized that what the other frameworks were lacking was DX (developer experience).
 
 First, I'll rate which framework to use based on the following criteria: Runtime performance, Developer Productivity, and Maintainability. More specifically:
+
 - Runtime performance: build bundle size, render speed
 - Developer productivity: ecosystem and community
 - Maintainability: how well a project can be maintained as it grows larger, as well as how code files are organized.
