@@ -11,7 +11,6 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@libsql/client": "^0.18.0",
     "@nuxt/a11y": "1.0.0-alpha.1",
     "@nuxt/content": "3.16.2",
     "@nuxt/eslint": "1.17.0",
@@ -26,6 +25,7 @@
     "better-sqlite3": "^13.0.3",
     "eslint": "^10.13.0",
     "nuxt": "^4.6.3",
+    "pg": "^8.23.1",
     "vue": "^3.5.44",
     "vue-router": "^5.4.0"
   },

@@ -82,9 +82,8 @@ export default defineNuxtConfig({
   },
   content: {
     database: {
-      type: 'libsql',
-      url: env.TURSO_DATABASE_URL!,
-      authToken: env.TURSO_AUTH_TOKEN!,
+      type: 'postgresql',
+      url: env.DATABASE_URL!,
     },
   },
   // SEO
