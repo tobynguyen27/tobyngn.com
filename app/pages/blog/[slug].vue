@@ -1,11 +1,13 @@
 <script setup lang="ts">
 const slug = useRoute().params.slug
 
-const { data: post } = await useAsyncData(`blog-${slug}`, () => {
+const { data } = await useAsyncData(`blog-${slug}`, () => {
   return queryCollection('blog').path(`/blog/${slug}`).first()
 })
 
-if (!post.value) {
+const post = data.value
+
+if (!post) {
   throw createError({
     status: 404,
     statusText: 'Page not found',
@@ -13,17 +15,17 @@ if (!post.value) {
 }
 
 defineOgImage('Blog.takumi', {
-  title: post.value.title,
-  description: post.value.description,
+  title: post.title,
+  description: post.description,
 }, [{ key: 'og', width: 1200, height: 630 }])
 
 useSeoMeta({
-  title: post.value.title,
-  description: post.value.description,
+  title: post.title,
+  description: post.description,
 })
 
 const publicationDate = computed(() => {
-  if (!post.value?.date)
+  if (!post.date)
     return ''
 
   return new Intl.DateTimeFormat('en-US', {
@@ -31,7 +33,7 @@ const publicationDate = computed(() => {
     month: 'long',
     day: 'numeric',
     timeZone: 'UTC',
-  }).format(new Date(post.value.date))
+  }).format(new Date(post.date))
 })
 </script>
 
