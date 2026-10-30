@@ -17,7 +17,9 @@ if (!post) {
 defineOgImage('Blog.takumi', {
   title: post.title,
   description: post.description,
-}, [{ key: 'og', width: 1200, height: 630 }])
+}, [
+  { key: 'og', width: 1200, height: 630 },
+])
 
 useSeoMeta({
   title: post.title,

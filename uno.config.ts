@@ -191,26 +191,33 @@ const semantic = {
   tx: { DEFAULT: 'var(--c-tx)', 2: 'var(--c-tx-2)', 3: 'var(--c-tx-3)' },
   ui: { DEFAULT: 'var(--c-ui)', 2: 'var(--c-ui-2)', 3: 'var(--c-ui-3)' },
   ...Object.fromEntries(
-    Object.keys(accents).map(k => [k, { DEFAULT: `var(--c-${k})`, 2: `var(--c-${k}-2)` }]),
+    Object.keys(accents).map(k => [
+      k,
+      { DEFAULT: `var(--c-${k})`, 2: `var(--c-${k}-2)` },
+    ]),
   ),
 }
 
 export default defineConfig({
-  presets: [presetWind4({
-    preflights: { reset: true },
-  }), presetIcons({
-    extraProperties: {
-      display: 'inline-block',
-      height: '1.2em',
-      width: '1.2em',
-    },
-  }), presetTypography({
-    cssExtend: {
-      'h2 a': { 'font-size': 'inherit', 'text-decoration': 'none' },
-      'h3 a': { 'font-size': 'inherit', 'text-decoration': 'none' },
-      'h4 a': { 'font-size': 'inherit', 'text-decoration': 'none' },
-    },
-  })],
+  presets: [
+    presetWind4({
+      preflights: { reset: true },
+    }),
+    presetIcons({
+      extraProperties: {
+        display: 'inline-block',
+        height: '1.2em',
+        width: '1.2em',
+      },
+    }),
+    presetTypography({
+      cssExtend: {
+        'h2 a': { 'font-size': 'inherit', 'text-decoration': 'none' },
+        'h3 a': { 'font-size': 'inherit', 'text-decoration': 'none' },
+        'h4 a': { 'font-size': 'inherit', 'text-decoration': 'none' },
+      },
+    }),
+  ],
   transformers: [
     transformerVariantGroup(),
   ],
@@ -220,7 +227,10 @@ export default defineConfig({
       mono: 'Geist Mono',
       serif: 'IBM Plex Serif',
     },
-    colors: { ...palette, ...semantic },
+    colors: {
+      ...palette,
+      ...semantic,
+    },
   },
   preflights: [
     {
