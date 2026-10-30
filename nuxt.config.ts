@@ -85,6 +85,9 @@ export default defineNuxtConfig({
       type: 'postgresql',
       url: env.DATABASE_URL_POOLED!,
     },
+    experimental: {
+      sqliteConnector: 'native',
+    },
   },
   // SEO
   site: {

@@ -25,7 +25,7 @@ function toggleColorMode() {
             <div :class="[colorMode.value === 'light' ? 'i-ph:sun' : 'i-ph:moon']" />
 
             <template #fallback>
-              <div class="i-ph:sun" />
+              <div class="" />
             </template>
           </ClientOnly>
         </button>
