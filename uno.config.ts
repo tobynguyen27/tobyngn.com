@@ -225,7 +225,7 @@ export default defineConfig({
     font: {
       sans: 'Geist',
       mono: 'Geist Mono',
-      serif: 'IBM Plex Serif',
+      serif: 'Geist Serif',
     },
     colors: {
       ...palette,

@@ -19,11 +19,11 @@ const items: {
 
 <template>
   <Section name="Elsewhere.">
-    <p class="">
+    <p>
       You can follow me:
     </p>
-    <ul class="list-disc list-inside marker:text-tx-2 px-2 mt-2 space-y-1">
-      <li v-for="item in items" :key="item.name" class="">
+    <ul class="list-disc list-inside marker:text-tx px-2 mt-2 space-y-1">
+      <li v-for="item in items" :key="item.name">
         {{ item.name }}: <NuxtLink :to="item.link" external target="_blank" class="link">
           {{ item.label }}
         </NuxtLink>

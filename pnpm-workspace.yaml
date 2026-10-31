@@ -11,3 +11,5 @@ allowBuilds:
   esbuild: true
   unrs-resolver: true
   vue-demi: true
+minimumReleaseAgeExclude:
+  - geist@1.9.0
