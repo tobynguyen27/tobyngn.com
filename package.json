@@ -40,6 +40,7 @@
     "eslint": "^10.13.0",
     "eslint-plugin-format": "^2.0.1",
     "nuxtseo-devtools-host": "^1.0.2",
+    "typescript": "^6",
     "unocss": "^66.12.0"
   },
   "devEngines": {
