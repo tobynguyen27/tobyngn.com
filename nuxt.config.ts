@@ -1,5 +1,3 @@
-import { env } from 'node:process'
-
 export default defineNuxtConfig({
   // App
   css: ['~/assets/css/global.css'],
@@ -22,10 +20,18 @@ export default defineNuxtConfig({
   // Build
   builder: 'vite',
   nitro: {
-    preset: 'vercel',
-    vercel: {
-      functions: {
-        runtime: 'bun1.x',
+    preset: 'cloudflare-module',
+    cloudflare: {
+      deployConfig: true,
+      wrangler: {
+        name: 'personal-website',
+        d1_databases: [
+          {
+            binding: 'DB',
+            database_name: 'personal-website',
+            database_id: '3af30e2c-b812-4aeb-abc5-c650525cca4d',
+          },
+        ],
       },
     },
   },
@@ -85,8 +91,8 @@ export default defineNuxtConfig({
   },
   content: {
     database: {
-      type: 'postgresql',
-      url: env.DATABASE_URL_POOLED!,
+      type: 'd1',
+      bindingName: 'DB',
     },
     experimental: {
       sqliteConnector: 'native',
