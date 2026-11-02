@@ -25,11 +25,13 @@ export default defineNuxtConfig({
       deployConfig: true,
       wrangler: {
         name: 'personal-website',
+        preview_urls: false,
+        workers_dev: false,
         d1_databases: [
           {
             binding: 'DB',
             database_name: 'personal-website',
-            database_id: '3af30e2c-b812-4aeb-abc5-c650525cca4d',
+            database_id: 'ca4b213b-2dd8-43c1-a031-c01897790e6f',
           },
         ],
       },
