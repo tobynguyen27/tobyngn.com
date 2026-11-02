@@ -44,7 +44,8 @@
     "nuxtseo-devtools-host": "^1.0.2",
     "taze": "^21.3.0",
     "typescript": "^6.0.3",
-    "unocss": "^66.12.0"
+    "unocss": "^66.12.0",
+    "wrangler": "^4.156.0"
   },
   "devEngines": {
     "packageManager": {
