@@ -50,7 +50,7 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     '@nuxt/hints',
     '@nuxt/a11y',
-    '@vercel/speed-insights/nuxt',
+    '@nuxtjs/partytown',
   ],
   eslint: {
     config: {
@@ -86,8 +86,10 @@ export default defineNuxtConfig({
   },
   scripts: {
     registry: {
-      vercelAnalytics: {
+      cloudflareWebAnalytics: {
+        token: '9f9851e2882c483fa10750eaaf3fbb69',
         trigger: 'onNuxtReady',
+        partytown: true,
       },
     },
   },
