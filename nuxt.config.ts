@@ -57,25 +57,22 @@ export default defineNuxtConfig({
     },
   },
   fonts: {
-
+    provider: 'local',
     families: [
       {
         name: 'Geist',
         weights: [400],
         global: true,
-        provider: 'local',
       },
       {
         name: 'Geist Mono',
         weights: [400],
         global: true,
-        provider: 'local',
       },
       {
         name: 'Geist Serif',
         weights: [300, 400],
         global: true,
-        provider: 'local',
       },
     ],
   },
