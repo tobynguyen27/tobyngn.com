@@ -36,7 +36,6 @@
   "devDependencies": {
     "@antfu/eslint-config": "^10.0.0",
     "@iconify-json/ph": "^1.2.2",
-    "@nuxtjs/partytown": "^2.0.0",
     "@unocss/eslint-plugin": "^66.12.0",
     "@unocss/nuxt": "^66.12.0",
     "eslint": "^10.14.0",
