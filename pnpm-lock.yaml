@@ -204,7 +204,7 @@ importers:
         version: 10.14.0(jiti@2.7.0)(supports-color@10.2.2)
       geist:
         specifier: ^1.9.0
-        version: 1.9.0(next@16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))
+        version: 1.9.2(next@16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))
       nuxt:
         specifier: ^4.6.4
         version: 4.6.4(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7(supports-color@10.2.2)))(@oxc-project/types@0.156.0)(@types/node@26.6.6)(@vue/compiler-sfc@3.5.44)(acorn@8.19.0)(confbox@0.3.2)(db0@0.3.4)(dotenv@17.4.2)(esbuild@0.28.2)(eslint@10.14.0(jiti@2.7.0)(supports-color@10.2.2))(giget@3.3.1)(ioredis@5.11.1(supports-color@10.2.2))(lightningcss@1.33.0)(mlly@1.8.2)(optionator@0.9.4)(oxc-parser@0.153.0)(rolldown@1.2.16)(rollup-plugin-visualizer@7.1.1(rolldown@1.2.16)(rollup@4.67.4))(rollup@4.67.4)(srvx@1.0.8)(supports-color@10.2.2)(terser@5.51.2)(typescript@6.0.3)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.1))(webpack@5.112.2(cssnano@9.9.0(postcss@8.5.32))(esbuild@0.28.2)(lightningcss@1.33.0)(postcss@8.5.32)(sharp@0.35.5(@types/node@26.6.6)))(yaml@2.9.1)
@@ -5055,8 +5055,8 @@ packages:
   fzf@0.5.2:
     resolution: {integrity: sha512-Tt4kuxLXFKHy8KT40zwsUPUkg1CrsgY25FxA2U/j/0WgEDCk3ddc/zLTCCcbSHX9FcKtLuVaDGtGE/STWC+j3Q==}
 
-  geist@1.9.0:
-    resolution: {integrity: sha512-uxiyxH5PaKDaK2//ln06NxJEz5gc6771BTwSs1YFgNnASGtp1SYD3VZShSIijvlNwDjMgHnzqye4MmIUTspEzw==}
+  geist@1.9.2:
+    resolution: {integrity: sha512-UU1x2q5Khob0+i4csFvXk1Ki4DePdu7xISuXyEcj1tzQMg64oN7Kbuy4e5z5QhcUWbbvOMJNs3ZxYQqpsEMV3w==}
     peerDependencies:
       next: '>=13.2.0'
 
@@ -13540,7 +13540,7 @@ snapshots:
 
   fzf@0.5.2: {}
 
-  geist@1.9.0(next@16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)):
+  geist@1.9.2(next@16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)):
     dependencies:
       next: 16.4.4(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
